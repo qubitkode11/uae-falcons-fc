@@ -1,6 +1,7 @@
 import ScrollHero from "../components/ScrollHero";
 import SkillsProgram from "../components/SkillsProgram";
 import SchoolHolidayProgram from "../components/SchoolHolidayProgram";
+import Gallery from "../components/Gallery";
 import HowToJoin from "../components/HowToJoin";
 import Testimonials from "../components/Testimonials";
 import ContactUs from "../components/ContactUs";
@@ -12,6 +13,7 @@ export default function Home() {
       <ScrollHero />
       <SkillsProgram />
       <SchoolHolidayProgram />
+      <Gallery />
       <HowToJoin />
       <Testimonials />
       <ContactUs />

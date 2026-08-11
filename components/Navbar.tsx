@@ -18,24 +18,20 @@ const navLinks = [
 ];
 
 const menuVariants: Variants = {
-  hidden: { opacity: 0, clipPath: "circle(0% at calc(100% - 40px) 40px)" },
+  hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    clipPath: "circle(150% at calc(100% - 40px) 40px)",
     transition: {
-      type: "spring",
-      stiffness: 20,
-      restDelta: 2
+      duration: 0.3,
+      ease: "easeOut"
     }
   },
   exit: {
     opacity: 0,
-    clipPath: "circle(0% at calc(100% - 40px) 40px)",
     transition: {
       delay: 0.3,
-      type: "spring",
-      stiffness: 400,
-      damping: 40
+      duration: 0.3,
+      ease: "easeIn"
     }
   }
 };

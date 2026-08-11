@@ -6,11 +6,8 @@ export default function FloatingJoin() {
   const [isHovered, setIsHovered] = useState(false);
 
   const scrollToJoin = () => {
-    // A simple way to scroll near the bottom where Contact Us / How to Join is
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: 'smooth'
-    });
+    // Scroll to the How to Join section
+    document.getElementById('join')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

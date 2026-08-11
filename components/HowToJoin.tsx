@@ -36,7 +36,7 @@ const steps = [
 
 export default function HowToJoin() {
   return (
-    <section className="w-full bg-black py-32 relative overflow-hidden">
+    <section id="join" className="w-full bg-black py-32 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
