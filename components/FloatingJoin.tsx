@@ -52,6 +52,7 @@ export default function FloatingJoin() {
           src="/floating_botton.png" 
           alt="Join Us" 
           fill
+          sizes="(max-width: 768px) 100px, 150px"
           className="object-contain"
         />
       </button>

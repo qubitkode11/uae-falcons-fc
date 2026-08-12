@@ -22,10 +22,10 @@ const milker = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Northern Falcons FC",
-  description: "Northern Falcons FC Immersive Hero",
+  title: "UAE Falcons FC",
+  description: "UAE Falcons AC - Elite Football Development Program",
   icons: {
-    icon: '/falcon_logo.png',
+    icon: '/uae%20falcons/UAE_Logo.webp',
   },
 };
 

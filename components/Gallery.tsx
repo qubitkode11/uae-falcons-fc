@@ -4,22 +4,32 @@ import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useSpring, useMotionValueEvent } from "framer-motion";
 
 const images = [
-  "11040735-football-3797067_1920.jpg",
-  "11040735-football-3828278_1920.jpg",
-  "11040735-football-6660810_1920.jpg",
-  "18240181.jpg",
-  "carol_austin1-football-2340841_1920.jpg",
-  "coach1.jpg",
-  "coach2.jpg",
-  "coach3.jpg",
-  "dimitrisvetsikas1969-little-boys-5777155_1920.jpg",
-  "fDSC_0414-scaled.jpg",
-  "pexels-avillalonv-34741670.jpg",
-  "pexels-franco-monsalvo-252430633-32266274.jpg",
-  "pexels-laura-rincon-318039951-15789898.jpg",
-  "pexels-laura-rincon-318039951-16538896.jpg",
-  "pexels-laura-rincon-318039951-28260833.jpg",
-  "testimonials_bg.jpg",
+  "a7400009-high.webp",
+  "a7400119-high-7adpq3.webp",
+  "a7400119-high.webp",
+  "a7400154-high.webp",
+  "a7400165-high.webp",
+  "a7400170-high.webp",
+  "a7400189-high.webp",
+  "a7400206-high.webp",
+  "a7400215-high-jusc6r.webp",
+  "a7400256-high.webp",
+  "a7400262-high.webp",
+  "a7400266-high.webp",
+  "a7400304-high.webp",
+  "a7400318-high.webp",
+  "a7400345-high-0xlnl1.webp",
+  "a7400345-high.webp",
+  "a7400376-high.webp",
+  "image-high.webp",
+  "red-white-yellow-modern-simple-football-match-poster-a3-portrait-high-j1shfq.webp",
+  "whatsapp-image-2026-05-15-at-18-12-46-1-high.webp",
+  "whatsapp-image-2026-05-15-at-18-12-47-3-high.webp",
+  "whatsapp-image-2026-05-15-at-18-12-47-high.webp",
+  "whatsapp-image-2026-05-15-at-18-12-48-1-high.webp",
+  "whatsapp-image-2026-05-15-at-18-14-07-high.webp",
+  "whatsapp-image-2026-05-15-at-19-37-47-2-high-hnrkdf.webp",
+  "whatsapp-image-2026-05-15-at-21-06-08-1-high.webp",
 ];
 
 export default function Gallery() {
@@ -192,7 +202,7 @@ export default function Gallery() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/falcon/${img}`}
+                  src={`/uae%20falcons/${img}`}
                   alt={`Gallery Image ${index + 1}`}
                   className="w-full h-full object-cover transition-opacity duration-300"
                   style={{ opacity: isActive ? 1 : 0.7 }}
@@ -223,7 +233,7 @@ export default function Gallery() {
             </button>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src={`/falcon/${selectedImage}`} 
+              src={`/uae%20falcons/${selectedImage}`} 
               alt="Full size gallery view" 
               className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-[0_0_50px_rgba(255,255,255,0.1)]"
               onClick={(e) => e.stopPropagation()} 

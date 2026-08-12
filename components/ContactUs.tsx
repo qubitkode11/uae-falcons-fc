@@ -79,27 +79,27 @@ export default function ContactUs() {
           {/* Right Column - Contact Details */}
           <div className="flex-1 space-y-10">
             
-            {/* Emails Section */}
+            {/* Contact Information Section */}
             <div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center border border-white/10">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 </div>
-                <h3 className="text-2xl text-white font-bold uppercase tracking-wide" style={{ fontFamily: "var(--font-milker)" }}>Email Us</h3>
+                <h3 className="text-2xl text-white font-bold uppercase tracking-wide" style={{ fontFamily: "var(--font-milker)" }}>Get In Touch</h3>
               </div>
               
               <div className="space-y-4 pl-16">
                 <div>
-                  <h4 className="text-zinc-400 text-sm font-bold uppercase tracking-wide">Registration & General Inquiries</h4>
-                  <a href="mailto:northernfalconsfc@gmail.com" className="text-white text-lg hover:text-zinc-300 transition-colors">northernfalconsfc@gmail.com</a>
+                  <h4 className="text-zinc-400 text-sm font-bold uppercase tracking-wide">Email</h4>
+                  <a href="mailto:management@uaefalconsfc.com" className="text-white text-lg hover:text-zinc-300 transition-colors">management@uaefalconsfc.com</a>
                 </div>
                 <div>
-                  <h4 className="text-zinc-400 text-sm font-bold uppercase tracking-wide">Coaching, Playing & Training</h4>
-                  <a href="mailto:coaching.nffc@gmail.com" className="text-white text-lg hover:text-zinc-300 transition-colors">coaching.nffc@gmail.com</a>
+                  <h4 className="text-zinc-400 text-sm font-bold uppercase tracking-wide">Phone / WhatsApp</h4>
+                  <a href="tel:+971551231160" className="text-white text-lg hover:text-zinc-300 transition-colors">+971 55 123 1160</a>
                 </div>
                 <div>
-                  <h4 className="text-zinc-400 text-sm font-bold uppercase tracking-wide">Fees or other finance</h4>
-                  <a href="mailto:finance.nffc@gmail.com" className="text-white text-lg hover:text-zinc-300 transition-colors">finance.nffc@gmail.com</a>
+                  <h4 className="text-zinc-400 text-sm font-bold uppercase tracking-wide">Instagram</h4>
+                  <a href="https://instagram.com/uaefalconsac" target="_blank" rel="noopener noreferrer" className="text-white text-lg hover:text-zinc-300 transition-colors">@uaefalconsac</a>
                 </div>
               </div>
             </div>
@@ -117,15 +117,15 @@ export default function ContactUs() {
               
               <div className="space-y-3 pl-16 text-lg">
                 <div className="flex justify-between max-w-xs">
-                  <span className="text-zinc-400">Mon - Thu</span>
-                  <span className="text-white font-medium">9:00 AM - 8:00 PM</span>
+                  <span className="text-zinc-400">Monday - Friday</span>
+                  <span className="text-white font-medium">9:00 AM - 5:00 PM</span>
                 </div>
                 <div className="flex justify-between max-w-xs">
-                  <span className="text-zinc-400">Friday</span>
-                  <span className="text-white font-medium">9:00 AM - 3:00 PM</span>
+                  <span className="text-zinc-400">Saturday</span>
+                  <span className="text-white font-medium">10:00 AM - 5:00 PM</span>
                 </div>
                 <div className="flex justify-between max-w-xs">
-                  <span className="text-zinc-400">Sat - Sun</span>
+                  <span className="text-zinc-400">Sunday</span>
                   <span className="text-red-400 font-medium">Closed</span>
                 </div>
               </div>
@@ -143,8 +143,9 @@ export default function ContactUs() {
               </div>
               
               <div className="pl-16">
-                <p className="text-white text-xl">Hayes Park, Thornbury</p>
-                <a href="https://maps.google.com/?q=Hayes+Park,+Thornbury" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-zinc-400 hover:text-white transition-colors underline underline-offset-4 decoration-white/30">
+                <p className="text-white text-xl">Damac hills 2</p>
+                <p className="text-zinc-400 text-lg">Dubai, United Arab Emirates</p>
+                <a href="https://maps.google.com/?q=Damac+hills+2,+Dubai,+United+Arab+Emirates" target="_blank" rel="noopener noreferrer" className="inline-block mt-2 text-zinc-400 hover:text-white transition-colors underline underline-offset-4 decoration-white/30">
                   Get Directions
                 </a>
               </div>

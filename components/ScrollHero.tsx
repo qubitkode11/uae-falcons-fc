@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import InfoCards from "./InfoCards";
 
 const FRAME_COUNT = 240;
@@ -13,6 +14,7 @@ export default function ScrollHero({ children }: { children?: React.ReactNode })
   const containerRef = useRef<HTMLDivElement>(null);
   const [images, setImages] = useState<HTMLImageElement[]>([]);
   const [progress, setProgress] = useState(0);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
     // Preload images
@@ -35,7 +37,10 @@ export default function ScrollHero({ children }: { children?: React.ReactNode })
 
     // Initial draw if first frame loads early
     if (loadedImages[0]) {
-      loadedImages[0].onload = () => drawFrame(1);
+      loadedImages[0].onload = () => {
+        setIsReady(true);
+        drawFrame(1);
+      };
     }
   }, []);
 
@@ -107,7 +112,15 @@ export default function ScrollHero({ children }: { children?: React.ReactNode })
   return (
     <div ref={containerRef} className="relative h-[600vh] w-full bg-black">
       <div className="sticky top-0 h-screen w-full overflow-hidden">
-        <canvas ref={canvasRef} className="absolute inset-0 h-full w-full object-cover" />
+        {/* Prioritized LCP Image for instant load */}
+        <Image 
+          src="/hero_frames/ezgif-frame-001.jpg" 
+          alt="Hero Background" 
+          fill 
+          priority
+          className={`object-cover transition-opacity duration-500 ${isReady ? 'opacity-0' : 'opacity-100'}`} 
+        />
+        <canvas ref={canvasRef} className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-500 ${isReady ? 'opacity-100' : 'opacity-0'}`} />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60 pointer-events-none" />
         

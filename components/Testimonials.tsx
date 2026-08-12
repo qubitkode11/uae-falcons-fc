@@ -5,19 +5,19 @@ import Image from 'next/image';
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "I love playing for Northern Falcons Football Club. The club has a great atmosphere and the coaches are always pushing us to improve. I have made some great friends here too!",
-      author: "Coach Mark",
-      role: "Masters Team Coach"
+      quote: "UAE Falcons AC has completely transformed my approach to the game. The elite training and professional environment pushed me to reach my full potential on and off the pitch.",
+      author: "Omar",
+      role: "First Squad Player"
     },
     {
-      quote: "Northern Falcons Football Club has been an amazing experience for my son. The coaches are knowledgeable and supportive, and the club has a great sense of community.",
-      author: "Tom",
-      role: "Parent of a Junior Player"
+      quote: "The coaching staff is incredible. They focus not just on technical skills, but on character building and discipline. It's the perfect place for any ambitious young player.",
+      author: "Sarah",
+      role: "Academy Parent"
     },
     {
-      quote: "I have been playing for Northern Falcons Football Club for 3 years now and have seen a huge improvement in my game. The coaching staff is top-notch and always pushes me to be my best.",
-      author: "Jessica",
-      role: "AAA Team Player"
+      quote: "Joining the Falcons was the best decision for my football career. The structured pathway gave me the international exposure and opportunities I needed to succeed.",
+      author: "Ahmed",
+      role: "Squad A Player"
     }
   ];
 

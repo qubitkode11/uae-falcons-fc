@@ -8,13 +8,13 @@ import Image from "next/image";
 
 const navLinks = [
   { title: "Home", href: "/" },
-  { title: "Play With Us", href: "/play" },
-  { title: "Coach With Us", href: "/coach" },
-  { title: "AAA", href: "/aaa" },
-  { title: "Coerver", href: "/coerver" },
-  { title: "Code of Conduct", href: "/code-of-conduct" },
-  { title: "About Us", href: "/about" },
-  { title: "Contact Us", href: "/contact" },
+  { title: "About Us", href: "#about" },
+  { title: "Our Programs", href: "#programs" },
+  { title: "News & Updates", href: "#news" },
+  { title: "Gallery", href: "#gallery" },
+  { title: "Accommodation", href: "#accommodation" },
+  { title: "Elite Player Lifestyle", href: "#lifestyle" },
+  { title: "Coaches & Staff", href: "#coaches" },
 ];
 
 const menuVariants: Variants = {
@@ -65,7 +65,7 @@ export default function Navbar() {
   return (
     <>
       <Link href="/" className="fixed top-6 left-6 md:top-10 md:left-10 z-50">
-        <Image src="/falcon_logo.png" alt="Northern Falcons FC Logo" width={80} height={80} className="w-16 md:w-20 hover:scale-105 transition-transform drop-shadow-xl" />
+        <Image src="/uae%20falcons/UAE_Logo.webp" alt="UAE Falcons FC Logo" width={80} height={80} className="w-12 md:w-16 hover:scale-105 transition-transform drop-shadow-xl" style={{ height: "auto" }} priority />
       </Link>
 
       <button

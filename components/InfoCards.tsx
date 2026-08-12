@@ -14,28 +14,24 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
   const titleOpacity = getOpacity(progress, -1, 0, 0.04, 0.10);
   const titleVisible = titleOpacity > 0;
 
-  // About Us Section: 0.11 to 0.23
-  const aboutOpacity = getOpacity(progress, 0.11, 0.13, 0.22, 0.24);
+  // About Us Section: 0.11 to 0.26
+  const aboutOpacity = getOpacity(progress, 0.11, 0.13, 0.24, 0.26);
   const aboutVisible = aboutOpacity > 0;
 
-  // Girls Section: 0.25 to 0.38
-  const girlsOpacity = getOpacity(progress, 0.25, 0.27, 0.36, 0.38);
-  const girlsVisible = girlsOpacity > 0;
+  // Join the Team Section: 0.28 to 0.44
+  const joinOpacity = getOpacity(progress, 0.28, 0.30, 0.42, 0.44);
+  const joinVisible = joinOpacity > 0;
 
-  // Boys Section: 0.39 to 0.52
-  const boysOpacity = getOpacity(progress, 0.39, 0.41, 0.50, 0.52);
-  const boysVisible = boysOpacity > 0;
+  // Partnership Section: 0.46 to 0.62
+  const partnershipOpacity = getOpacity(progress, 0.46, 0.48, 0.60, 0.62);
+  const partnershipVisible = partnershipOpacity > 0;
 
-  // Masters Section: 0.53 to 0.66
-  const mastersOpacity = getOpacity(progress, 0.53, 0.55, 0.64, 0.66);
-  const mastersVisible = mastersOpacity > 0;
+  // Accommodation Section: 0.64 to 0.80
+  const accommodationOpacity = getOpacity(progress, 0.64, 0.66, 0.78, 0.80);
+  const accommodationVisible = accommodationOpacity > 0;
 
-  // AAA Section: 0.67 to 0.80
-  const aaaOpacity = getOpacity(progress, 0.67, 0.69, 0.78, 0.80);
-  const aaaVisible = aaaOpacity > 0;
-
-  // Coaches Section: 0.81 to 1.00
-  const coachesOpacity = getOpacity(progress, 0.81, 0.83, 1.0, 1.1); // never fades out at the end
+  // Coaches Section: 0.82 to 1.00
+  const coachesOpacity = getOpacity(progress, 0.82, 0.84, 1.0, 1.1); // never fades out at the end
   const coachesVisible = coachesOpacity > 0;
 
   return (
@@ -48,7 +44,7 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
       >
         <div className="flex flex-col items-center">
           <h1 className="text-white text-5xl md:text-8xl lg:text-9xl font-bold tracking-widest text-center uppercase drop-shadow-2xl px-4" style={{ fontFamily: "var(--font-milker)" }}>
-            Northern Falcons FC
+            UAE Falcons FC
           </h1>
           <p className="text-white text-lg md:text-2xl font-bold tracking-widest text-center uppercase drop-shadow-lg mt-2 md:mt-4" style={{ fontFamily: "var(--font-milker)" }}>
             Football For Everyone
@@ -58,103 +54,121 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
 
       {/* About Us Section */}
       <div 
-        className="absolute inset-0 flex flex-col items-center justify-center px-4 md:px-24 pointer-events-auto"
+        className="absolute inset-0 flex flex-col items-center justify-center px-4 md:px-10 pointer-events-auto"
         style={{ opacity: aboutOpacity, visibility: aboutVisible ? 'visible' : 'hidden' }}
       >
-        <div className="w-full max-w-4xl bg-black/40 backdrop-blur-md border border-white/20 rounded-3xl p-6 md:p-14 shadow-2xl text-center text-white mt-16 md:mt-0 max-h-[85vh] overflow-y-auto">
-           <h2 className="text-3xl md:text-6xl uppercase mb-4 md:mb-8 drop-shadow-md text-zinc-100" style={{ fontFamily: "var(--font-milker)" }}>About Us</h2>
-           <p className="text-sm md:text-xl text-zinc-200 leading-relaxed mb-4 md:mb-6 font-medium">
-             Founded in 1986, Northern Falcons Football Club has become a proud and growing part of the local football community. With a strong focus on inclusivity and development, we now coach and support over 250 junior players, along with senior men’s and women’s teams, All Abilities (AAA) teams, and a Masters team.
-           </p>
-           <p className="text-sm md:text-xl text-zinc-200 leading-relaxed font-medium">
-             Our mission is to provide a safe, supportive, and inclusive environment where players of all ages and abilities can develop their skills, build confidence, and foster a lifelong love for the game. Join the Falcons and be part of a club that values passion, teamwork, and community.
-           </p>
+        <div className="w-full max-w-6xl bg-black/60 backdrop-blur-xl border border-white/20 rounded-3xl p-6 md:p-10 shadow-2xl text-white mt-16 md:mt-0 max-h-[85vh] overflow-y-auto flex flex-col md:flex-row gap-8 text-left [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+           
+           {/* Text Content */}
+           <div className="flex-1 space-y-4 text-sm md:text-base text-zinc-200">
+             <h2 className="text-3xl md:text-5xl uppercase mb-2 text-center md:text-left drop-shadow-md text-zinc-100" style={{ fontFamily: "var(--font-milker)" }}>
+               Our Football Philosophy & Development Pathway
+             </h2>
+             
+             <p>
+               At <strong className="text-white">UAE Falcons Sport AC</strong>, we are bringing football back to its true meaning—where talent, passion, discipline, character, and hard work matter more than financial status. We strongly believe that no athlete should be denied an opportunity because of financial difficulties. Football is a sport for everyone, and every talented player deserves a fair chance to develop, compete, and succeed. Our mission is to create genuine opportunities for passionate footballers by building an environment focused on player growth, professional development, competitive exposure, and long-term progression.
+             </p>
+             <p>
+               Our philosophy is built around <strong className="text-white">talent, commitment, discipline, hard work, character, and continuous development</strong>. Above all, we believe in creating clear pathways that allow players to reach their maximum potential both on and off the pitch. While we do not offer salaries or accommodation for our First Squad players, we provide valuable support that can contribute significantly to an athlete’s career, including professional guidance, structured player development, match exposure, career support, performance improvement, and opportunities to be scouted and recognized. Our goal is to help ambitious players maximize their potential and progress toward higher levels of competitive football.
+             </p>
+             <p>
+               As part of our commitment to <strong className="text-white">Equal Opportunity Football</strong>, UAE Falcons Sport AC has established a dedicated development pathway for financially challenged athletes who are determined, committed, and willing to work hard. Selected players receive full training support, professional development opportunities, match experience, mentorship, and guidance, along with opportunities for promotion and greater exposure. Talented and deserving players may earn direct promotion to the First Squad based on their performance, commitment, and development.
+             </p>
+             <p>
+               Our club structure is organized into different competitive and developmental levels to ensure that players have a clear route for progression. The senior structure includes the <strong className="text-white">First Squad, Squad A, Squad A(S), and Squad B</strong>, with each squad serving a specific competitive or developmental purpose. The <strong className="text-white">First Squad</strong> represents our highest competitive level, and selected First Squad players do not pay training or match fees. <strong className="text-white">Squad A</strong> serves as the primary support and development pathway for players who are preparing to transition into the First Squad. Promotion is based on performance level, development progress, tactical readiness, technical ability, commitment, and professionalism. <strong className="text-white">Squad B</strong> provides an additional development environment that helps prepare players for progression toward higher competitive levels within the club.
+             </p>
+             <p>
+               Our <strong className="text-white">Academy & Youth Development</strong> program is currently under selection and formation. Through partnerships with multiple academies, we conduct trials to identify and develop talented young footballers. Selected youth players will enter into a player agreement, purchase the official club kit, and pay a registration fee only. Placement and applicable fees are determined according to factors such as playing position, age category, technical level, development requirements, and additional evaluation criteria.
+             </p>
+             <p>
+               Our overall <strong className="text-white">Player Development Pathway</strong> is designed to provide ambitious footballers with a clear route for growth and progression: <strong className="text-yellow-400">Academy Squads → Squad B → Squad A → First Squad</strong>. At UAE Falcons Sport AC, every player has the opportunity to grow, improve, and earn their place through dedication, commitment, professionalism, and performance. We are committed to creating a football environment where opportunity is based on potential and effort, helping players take meaningful steps toward a stronger and more successful future in the game.
+             </p>
+           </div>
+
+           {/* Certificate Image */}
+           <div className="flex-1 flex flex-col items-center justify-start gap-4">
+              <div className="sticky top-0 w-full max-w-sm">
+                <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
+                  <Image 
+                    src="/uae%20falcons/about%20us/whatsapp-image-2026-05-15-at-23-04-05-high.webp" 
+                    alt="UAE Falcons Certificate" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-contain bg-white/5 backdrop-blur-sm"
+                  />
+                </div>
+                <p className="text-center mt-4 text-zinc-400 text-sm font-medium uppercase tracking-widest">Official Certificate</p>
+              </div>
+           </div>
+
         </div>
       </div>
 
-      {/* Girls Section */}
+      {/* Join the Team Section */}
       <div 
         className="absolute inset-0 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-24 pointer-events-auto gap-4 md:gap-0"
-        style={{ opacity: girlsOpacity, visibility: girlsVisible ? 'visible' : 'hidden' }}
+        style={{ opacity: joinOpacity, visibility: joinVisible ? 'visible' : 'hidden' }}
       >
         <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white mt-16 md:mt-0">
-           <h2 className="text-3xl md:text-5xl uppercase mb-2 md:mb-4 drop-shadow-md" style={{ fontFamily: "var(--font-milker)" }}>Girls & Women</h2>
-           <p className="text-sm md:text-lg text-zinc-200 mb-2 md:mb-4 font-bold text-white uppercase tracking-wider">Join one of our 2026 teams</p>
-           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6">At Northern Falcons FC, we welcome girls and women to be part of our vibrant football community. This is for girls and women as well! Whether you are ready to compete in structured leagues or prefer a focus on learning and skill development, we offer flexible programs to suit every level. From competitive junior teams to skills-based training programs, our goal is to support every player's growth, confidence, and love for the game. Get started today and become part of the Falcons family!</p>
-           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Join The Team</button>
+           <h2 className="text-2xl md:text-4xl uppercase mb-2 md:mb-4 drop-shadow-md text-zinc-100 break-words" style={{ fontFamily: "var(--font-milker)" }}>Join The Team</h2>
+           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6 leading-relaxed">
+             Ready to take your football journey to the next level? UAE Falcons International Football Club welcomes ambitious players who are passionate, committed, and ready to work hard. Join our football family, develop your skills, gain valuable experience, and earn your opportunity to progress through our pathway.
+           </p>
+           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Apply Now</button>
         </div>
-        <div className="w-full md:w-[45%] max-w-md h-[200px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl flex-shrink-0">
-          <Image src="/falcon/pexels-laura-rincon-318039951-15789898.jpg" alt="Girls Football Academy at Northern Falcons (Desktop)" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover hidden md:block" />
-          <Image src="/falcon/pexels-laura-rincon-318039951-28260833.jpg" alt="Girls Football Academy at Northern Falcons (Mobile)" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-top block md:hidden" />
+        <div className="w-full md:w-[45%] max-w-md h-[250px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl flex-shrink-0">
+          <Image src="/uae%20falcons/whatsapp-image-2026-05-15-at-18-12-47-high.webp" alt="Join UAE Falcons" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
         </div>
       </div>
 
-      {/* Boys Section */}
+      {/* Partnership Section */}
       <div 
         className="absolute inset-0 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-24 pointer-events-auto gap-4 md:gap-0"
-        style={{ opacity: boysOpacity, visibility: boysVisible ? 'visible' : 'hidden' }}
+        style={{ opacity: partnershipOpacity, visibility: partnershipVisible ? 'visible' : 'hidden' }}
       >
-        <div className="w-full md:w-[45%] max-w-md h-[200px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl mt-16 md:mt-0 flex-shrink-0">
-          <Image src="/falcon/dimitrisvetsikas1969-little-boys-5777155_1920.jpg" alt="Boys Football Program at Northern Falcons" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+        <div className="w-full md:w-[45%] max-w-md h-[250px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl mt-16 md:mt-0 flex-shrink-0">
+          <Image src="/uae%20falcons/red-white-yellow-modern-simple-football-match-poster-a3-portrait-high-j1shfq.webp" alt="Partnership with Al Hamdan FC" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
         </div>
         <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white">
-           <h2 className="text-3xl md:text-5xl uppercase mb-2 md:mb-4 drop-shadow-md" style={{ fontFamily: "var(--font-milker)" }}>Boys Program</h2>
-           <p className="text-sm md:text-lg text-zinc-200 mb-2 md:mb-4 font-bold text-white uppercase tracking-wider">Join one of our 2026 teams</p>
-           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6">At Northern Falcons FC, we welcome boys aged 5 to 17 to be part of our vibrant football community. Whether your child is ready to compete in structured leagues or prefers a focus on learning and skill development, we offer flexible programs to suit every level. From competitive junior teams to skills-based training programs, our goal is to support every player's growth, confidence, and love for the game. Get started today and become part of the Falcons family!</p>
-           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Join The Team</button>
+           <h2 className="text-2xl md:text-4xl uppercase mb-2 md:mb-4 drop-shadow-md text-zinc-100 leading-tight break-words" style={{ fontFamily: "var(--font-milker)" }}>Partnership with Al Hamdan FC</h2>
+           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6 leading-relaxed">
+             UAE Falcons International Football Club is proud to announce a strategic partnership with Al Hamdan FC, creating new opportunities for player development, talent identification, friendly matches, coaching collaboration, and community football initiatives. Together, both clubs are working to strengthen football development and build a brighter future for players and the wider football community.
+           </p>
+           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Apply Now</button>
         </div>
       </div>
 
-      {/* Masters Section */}
+      {/* Accommodation Section */}
       <div 
         className="absolute inset-0 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-24 pointer-events-auto gap-4 md:gap-0"
-        style={{ opacity: mastersOpacity, visibility: mastersVisible ? 'visible' : 'hidden' }}
+        style={{ opacity: accommodationOpacity, visibility: accommodationVisible ? 'visible' : 'hidden' }}
       >
         <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white mt-16 md:mt-0">
-           <h2 className="text-3xl md:text-5xl uppercase mb-2 md:mb-4 drop-shadow-md" style={{ fontFamily: "var(--font-milker)" }}>Masters Program</h2>
-           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6">An opportunity for men and women over 45 to continue or return to football. Stay active, build connections, and share your passion for the game in a supportive and friendly environment.</p>
-           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Join The Team</button>
+           <h2 className="text-2xl md:text-4xl uppercase mb-2 md:mb-4 drop-shadow-md text-zinc-100 break-words" style={{ fontFamily: "var(--font-milker)" }}>Accommodation</h2>
+           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6 leading-relaxed">
+             We understand that a comfortable environment matters to a player’s development. Our accommodation support is designed to provide players with a safe and suitable place to stay, helping them focus on training, performance, and their football journey.
+           </p>
+           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Apply Now</button>
         </div>
-        <div className="w-full md:w-[45%] max-w-md h-[200px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl flex-shrink-0">
-          <Image src="/falcon/18240181.jpg" alt="Masters Football Program at Northern Falcons" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover object-top" />
-        </div>
-      </div>
-
-      {/* AAA Section */}
-      <div 
-        className="absolute inset-0 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-24 pointer-events-auto gap-4 md:gap-0"
-        style={{ opacity: aaaOpacity, visibility: aaaVisible ? 'visible' : 'hidden' }}
-      >
-        <div className="w-full md:w-[45%] max-w-md h-[200px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl mt-16 md:mt-0 flex-shrink-0">
-          <Image src="/falcon/fDSC_0414-scaled.jpg" alt="All Abilities Program at Northern Falcons" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
-        </div>
-        <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white">
-           <h2 className="text-3xl md:text-5xl uppercase mb-2 md:mb-4 drop-shadow-md" style={{ fontFamily: "var(--font-milker)" }}>All Abilities (AAA)</h2>
-           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6">Every child deserves a team. Our All Abilities (AAA) program welcomes children of different abilities to enjoy football and be part of the Falcons family.</p>
-           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Join The Team</button>
+        <div className="w-full md:w-[45%] max-w-md h-[250px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl flex-shrink-0">
+          <Image src="/uae%20falcons/whatsapp-image-2026-05-15-at-19-37-47-2-high-hnrkdf.webp" alt="Accommodation Support" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
         </div>
       </div>
 
-      {/* Coaches Section */}
+      {/* Our Coaches Section */}
       <div 
         className="absolute inset-0 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-24 pointer-events-auto gap-4 md:gap-0"
         style={{ opacity: coachesOpacity, visibility: coachesVisible ? 'visible' : 'hidden' }}
       >
-        <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white mt-16 md:mt-0">
-           <h2 className="text-3xl md:text-5xl uppercase mb-2 md:mb-4 drop-shadow-md" style={{ fontFamily: "var(--font-milker)" }}>Expert Coaches</h2>
-           <p className="text-sm md:text-lg text-zinc-200 mb-4 md:mb-6">Join our expert coaching staff at Northern Falcons FC. Help us foster a lifelong love for the game in a safe, supportive, and inclusive environment. Become a mentor for our community today.</p>
-           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Coach With Us</button>
+        <div className="w-full md:w-[45%] max-w-md h-[250px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl mt-16 md:mt-0 flex-shrink-0">
+          <Image src="/uae%20falcons/a7400215-high-jusc6r.webp" alt="Our Coaches" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
         </div>
-        <div className="w-full md:w-[50%] max-w-lg flex gap-2 md:gap-4 h-[150px] md:h-[350px] flex-shrink-0">
-          <div className="flex-1 relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl transform md:translate-y-8">
-            <Image src="/falcon/coach1.jpg" alt="Northern Falcons Coach 1" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover object-top" />
-          </div>
-          <div className="flex-1 relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl z-10 transform scale-110 md:scale-100">
-            <Image src="/falcon/coach2.jpg" alt="Northern Falcons Coach 2" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover object-top" />
-          </div>
-          <div className="flex-1 relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl transform md:-translate-y-8">
-            <Image src="/falcon/coach3.jpg" alt="Northern Falcons Coach 3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover object-top" />
-          </div>
+        <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white">
+           <h2 className="text-2xl md:text-4xl uppercase mb-2 md:mb-4 drop-shadow-md text-zinc-100 break-words" style={{ fontFamily: "var(--font-milker)" }}>Our Coaches</h2>
+           <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6 leading-relaxed">
+             Behind every developing player is a dedicated coaching team. Our experienced coaches and support staff focus on technical excellence, tactical intelligence, physical development, and character, creating a professional and positive environment where players can grow both on and off the pitch.
+           </p>
+           <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Coach With Us</button>
         </div>
       </div>
 
