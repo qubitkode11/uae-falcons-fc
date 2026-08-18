@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "UAE Falcons AC has completely transformed my approach to the game. The elite training and professional environment pushed me to reach my full potential on and off the pitch.",
+      quote: "USA Falcons AC has completely transformed my approach to the game. The elite training and professional environment pushed me to reach my full potential on and off the pitch.",
       author: "Omar",
       role: "First Squad Player"
     },

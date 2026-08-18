@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand & Mission */}
           <div className="flex-1 text-center md:text-left flex flex-col items-center md:items-start">
             <h2 className="text-3xl md:text-4xl text-white font-bold tracking-widest uppercase mb-4 drop-shadow-md" style={{ fontFamily: "var(--font-milker)" }}>
-              UAE Falcons FC
+              USA Falcons FC
             </h2>
             <p className="text-zinc-400 max-w-sm mx-auto md:mx-0 leading-relaxed">
               Fostering a lifelong love for the game in a safe, supportive, and inclusive environment. Football for everyone.
@@ -48,7 +48,7 @@ export default function Footer() {
                 className="group relative hover:scale-105 transition-transform bg-white/5 p-4 rounded-2xl border border-white/10 hover:bg-white/10 shadow-lg"
               >
                 <div className="absolute inset-0 bg-white/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-md"></div>
-                <Image src="/uae%20falcons/UAE_Logo.webp" alt="UAE Falcons FC Logo" width={100} height={100} className="object-contain w-auto h-12 relative z-10" style={{ width: "auto" }} />
+                <Image src="/USA-Falcon-Logo.png" alt="USA Falcons FC Logo" width={100} height={100} className="object-contain w-auto h-12 relative z-10" style={{ width: "auto" }} />
               </a>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-500 text-sm font-medium">
-          <p>&copy; {new Date().getFullYear()} UAE Falcons FC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} USA Falcons FC. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>

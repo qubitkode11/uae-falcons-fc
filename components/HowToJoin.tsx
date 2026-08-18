@@ -44,7 +44,7 @@ export default function HowToJoin() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold tracking-wider uppercase drop-shadow-lg" style={{ fontFamily: "var(--font-milker)" }}>
-            How To Join UAE Falcons FC
+            How To Join USA Falcons FC
           </h2>
           <p className="mt-6 text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto font-medium">
             Ready to take your football journey to the next level? Joining our elite development pathway is simple. Follow these steps to get started.

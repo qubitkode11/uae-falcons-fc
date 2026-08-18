@@ -65,7 +65,7 @@ export default function Navbar() {
   return (
     <>
       <Link href="/" className="fixed top-6 left-6 md:top-10 md:left-10 z-50">
-        <Image src="/uae%20falcons/UAE_Logo.webp" alt="UAE Falcons FC Logo" width={80} height={80} className="w-12 md:w-16 hover:scale-105 transition-transform drop-shadow-xl" style={{ height: "auto" }} priority />
+        <Image src="/USA-Falcon-Logo.png" alt="USA Falcons FC Logo" width={80} height={80} className="w-12 md:w-16 hover:scale-105 transition-transform drop-shadow-xl" style={{ height: "auto" }} priority />
       </Link>
 
       <button

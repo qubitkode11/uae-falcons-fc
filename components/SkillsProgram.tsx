@@ -17,7 +17,7 @@ export default function SkillsProgram() {
             </h2>
             <div className="space-y-6 text-base md:text-lg text-zinc-300 leading-relaxed font-medium">
               <p>
-                At UAE Falcons AC, we are dedicated to developing talented football players through professional coaching, elite training programs, and a supportive environment. Our mission is to help young athletes reach their full potential both on and off the pitch.
+                At USA Falcons AC, we are dedicated to developing talented football players through professional coaching, elite training programs, and a supportive environment. Our mission is to help young athletes reach their full potential both on and off the pitch.
               </p>
               <p>
                 We strive to create future champions by combining professional football development with character building, discipline, and excellence.

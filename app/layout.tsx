@@ -22,10 +22,10 @@ const milker = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "UAE Falcons FC",
-  description: "UAE Falcons AC - Elite Football Development Program",
+  title: "USA Falcons FC",
+  description: "USA Falcons AC - Elite Football Development Program",
   icons: {
-    icon: '/uae%20falcons/UAE_Logo.webp',
+    icon: '/USA-Falcon-Logo.png',
   },
 };
 

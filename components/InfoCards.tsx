@@ -44,7 +44,7 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
       >
         <div className="flex flex-col items-center">
           <h1 className="text-white text-5xl md:text-8xl lg:text-9xl font-bold tracking-widest text-center uppercase drop-shadow-2xl px-4" style={{ fontFamily: "var(--font-milker)" }}>
-            UAE Falcons FC
+            USA Falcons FC
           </h1>
           <p className="text-white text-lg md:text-2xl font-bold tracking-widest text-center uppercase drop-shadow-lg mt-2 md:mt-4" style={{ fontFamily: "var(--font-milker)" }}>
             Football For Everyone
@@ -66,13 +66,13 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
              </h2>
              
              <p>
-               At <strong className="text-white">UAE Falcons Sport AC</strong>, we are bringing football back to its true meaning—where talent, passion, discipline, character, and hard work matter more than financial status. We strongly believe that no athlete should be denied an opportunity because of financial difficulties. Football is a sport for everyone, and every talented player deserves a fair chance to develop, compete, and succeed. Our mission is to create genuine opportunities for passionate footballers by building an environment focused on player growth, professional development, competitive exposure, and long-term progression.
+               At <strong className="text-white">USA Falcons Sport AC</strong>, we are bringing football back to its true meaning—where talent, passion, discipline, character, and hard work matter more than financial status. We strongly believe that no athlete should be denied an opportunity because of financial difficulties. Football is a sport for everyone, and every talented player deserves a fair chance to develop, compete, and succeed. Our mission is to create genuine opportunities for passionate footballers by building an environment focused on player growth, professional development, competitive exposure, and long-term progression.
              </p>
              <p>
                Our philosophy is built around <strong className="text-white">talent, commitment, discipline, hard work, character, and continuous development</strong>. Above all, we believe in creating clear pathways that allow players to reach their maximum potential both on and off the pitch. While we do not offer salaries or accommodation for our First Squad players, we provide valuable support that can contribute significantly to an athlete’s career, including professional guidance, structured player development, match exposure, career support, performance improvement, and opportunities to be scouted and recognized. Our goal is to help ambitious players maximize their potential and progress toward higher levels of competitive football.
              </p>
              <p>
-               As part of our commitment to <strong className="text-white">Equal Opportunity Football</strong>, UAE Falcons Sport AC has established a dedicated development pathway for financially challenged athletes who are determined, committed, and willing to work hard. Selected players receive full training support, professional development opportunities, match experience, mentorship, and guidance, along with opportunities for promotion and greater exposure. Talented and deserving players may earn direct promotion to the First Squad based on their performance, commitment, and development.
+               As part of our commitment to <strong className="text-white">Equal Opportunity Football</strong>, USA Falcons Sport AC has established a dedicated development pathway for financially challenged athletes who are determined, committed, and willing to work hard. Selected players receive full training support, professional development opportunities, match experience, mentorship, and guidance, along with opportunities for promotion and greater exposure. Talented and deserving players may earn direct promotion to the First Squad based on their performance, commitment, and development.
              </p>
              <p>
                Our club structure is organized into different competitive and developmental levels to ensure that players have a clear route for progression. The senior structure includes the <strong className="text-white">First Squad, Squad A, Squad A(S), and Squad B</strong>, with each squad serving a specific competitive or developmental purpose. The <strong className="text-white">First Squad</strong> represents our highest competitive level, and selected First Squad players do not pay training or match fees. <strong className="text-white">Squad A</strong> serves as the primary support and development pathway for players who are preparing to transition into the First Squad. Promotion is based on performance level, development progress, tactical readiness, technical ability, commitment, and professionalism. <strong className="text-white">Squad B</strong> provides an additional development environment that helps prepare players for progression toward higher competitive levels within the club.
@@ -81,7 +81,7 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
                Our <strong className="text-white">Academy & Youth Development</strong> program is currently under selection and formation. Through partnerships with multiple academies, we conduct trials to identify and develop talented young footballers. Selected youth players will enter into a player agreement, purchase the official club kit, and pay a registration fee only. Placement and applicable fees are determined according to factors such as playing position, age category, technical level, development requirements, and additional evaluation criteria.
              </p>
              <p>
-               Our overall <strong className="text-white">Player Development Pathway</strong> is designed to provide ambitious footballers with a clear route for growth and progression: <strong className="text-yellow-400">Academy Squads → Squad B → Squad A → First Squad</strong>. At UAE Falcons Sport AC, every player has the opportunity to grow, improve, and earn their place through dedication, commitment, professionalism, and performance. We are committed to creating a football environment where opportunity is based on potential and effort, helping players take meaningful steps toward a stronger and more successful future in the game.
+               Our overall <strong className="text-white">Player Development Pathway</strong> is designed to provide ambitious footballers with a clear route for growth and progression: <strong className="text-yellow-400">Academy Squads → Squad B → Squad A → First Squad</strong>. At USA Falcons Sport AC, every player has the opportunity to grow, improve, and earn their place through dedication, commitment, professionalism, and performance. We are committed to creating a football environment where opportunity is based on potential and effort, helping players take meaningful steps toward a stronger and more successful future in the game.
              </p>
            </div>
 
@@ -91,7 +91,7 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
                 <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
                   <Image 
                     src="/uae%20falcons/about%20us/whatsapp-image-2026-05-15-at-23-04-05-high.webp" 
-                    alt="UAE Falcons Certificate" 
+                    alt="USA Falcons Certificate" 
                     fill 
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-contain bg-white/5 backdrop-blur-sm"
@@ -112,12 +112,12 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
         <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white mt-16 md:mt-0">
            <h2 className="text-2xl md:text-4xl uppercase mb-2 md:mb-4 drop-shadow-md text-zinc-100 break-words" style={{ fontFamily: "var(--font-milker)" }}>Join The Team</h2>
            <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6 leading-relaxed">
-             Ready to take your football journey to the next level? UAE Falcons International Football Club welcomes ambitious players who are passionate, committed, and ready to work hard. Join our football family, develop your skills, gain valuable experience, and earn your opportunity to progress through our pathway.
+             Ready to take your football journey to the next level? USA Falcons International Football Club welcomes ambitious players who are passionate, committed, and ready to work hard. Join our football family, develop your skills, gain valuable experience, and earn your opportunity to progress through our pathway.
            </p>
            <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Apply Now</button>
         </div>
         <div className="w-full md:w-[45%] max-w-md h-[250px] md:h-[500px] relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl flex-shrink-0">
-          <Image src="/uae%20falcons/whatsapp-image-2026-05-15-at-18-12-47-high.webp" alt="Join UAE Falcons" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+          <Image src="/uae%20falcons/whatsapp-image-2026-05-15-at-18-12-47-high.webp" alt="Join USA Falcons" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
         </div>
       </div>
 
@@ -132,7 +132,7 @@ export default function InfoCards({ progress = 0 }: { progress?: number }) {
         <div className="w-full md:w-[45%] max-w-md bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-5 md:p-10 shadow-2xl text-white">
            <h2 className="text-2xl md:text-4xl uppercase mb-2 md:mb-4 drop-shadow-md text-zinc-100 leading-tight break-words" style={{ fontFamily: "var(--font-milker)" }}>Partnership with Al Hamdan FC</h2>
            <p className="text-sm md:text-base text-zinc-200 mb-4 md:mb-6 leading-relaxed">
-             UAE Falcons International Football Club is proud to announce a strategic partnership with Al Hamdan FC, creating new opportunities for player development, talent identification, friendly matches, coaching collaboration, and community football initiatives. Together, both clubs are working to strengthen football development and build a brighter future for players and the wider football community.
+             USA Falcons International Football Club is proud to announce a strategic partnership with Al Hamdan FC, creating new opportunities for player development, talent identification, friendly matches, coaching collaboration, and community football initiatives. Together, both clubs are working to strengthen football development and build a brighter future for players and the wider football community.
            </p>
            <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-black text-sm md:text-base font-bold uppercase rounded-full hover:scale-105 transition-transform w-full md:w-auto" style={{ fontFamily: 'var(--font-milker)' }}>Apply Now</button>
         </div>
